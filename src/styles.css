@@ -1,0 +1,108 @@
+body {
+  background-color: #EEF1EF;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 48px auto;
+  max-width: 600px;
+  position: relative;
+  min-height: calc(100vh - (48px * 2 + 26px)); /* window height - (footer's margin top and bottom + footer's height) */
+}
+
+header {
+  margin: 48px 0;
+}
+
+main {
+  position: relative;
+  padding-bottom: 48px;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 1.5;
+  color: #5F4B66;
+}
+
+form {
+  padding: 32px;
+  background-color: white;
+  box-shadow: 0px 20px 60px rgba(95, 75, 102, 0.08);
+  border-radius: 10px;
+  display: flex;
+  margin-bottom: 32px;
+}
+
+input[type=text] {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 16px;
+  border: 1px solid rgba(95, 75, 102, 0.5);
+  width: 80%;
+  font-size: 16px;
+  border-radius: 50px;
+  line-height: 20px;
+  color: #272044;
+}
+
+input[type=submit] {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 10px;
+  background: #F9564F;
+  color: white;
+  border: none;
+  width: 150px;
+  font-size: 16px;
+  border-radius: 50px;
+  padding: 16px 24px;
+  cursor: pointer;
+}
+
+.poem-content {
+  font-size: 16px;
+  background-color: #fff;
+  padding: 20px;
+  line-height: 2;
+  border-left: 3px solid #F9564F;
+  box-shadow: 0px 4px 30px 0px rgba(95, 75, 102, 0.3);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  line-height: 2;
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+}
+
+a {
+  color: #F9564F;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* For mobile phones: */
+@media only screen and (max-width: 500px) {
+  body {
+    max-width: 90%;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  input[type=text] {
+    width: calc(100% - 32px);
+    margin-bottom: 16px;
+  }
+
+  input[type=submit] {
+    width: 100%;
+    margin-left: 0;
+  }
+}
