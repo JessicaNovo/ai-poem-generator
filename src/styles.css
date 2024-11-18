@@ -43,7 +43,6 @@ input[type=text] {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 16px;
   border: 1px solid rgba(95, 75, 102, 0.5);
-  width: 80%;
   font-size: 16px;
   border-radius: 50px;
   line-height: 20px;
@@ -118,11 +117,6 @@ a:hover {
     display: flex;
     flex-direction: column;
     padding: 16px;
-  }
-
-  input[type=text] {
-    width: calc(100% - 32px);
-    
   }
 
   .poem-theme-input {
