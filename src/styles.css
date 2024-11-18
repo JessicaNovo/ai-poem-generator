@@ -57,7 +57,8 @@ input[type=submit] {
   cursor: pointer;
 }
 
-.poem-content {
+.poem-container {
+  display: none;
   font-size: 16px;
   background-color: #fff;
   padding: 20px;
